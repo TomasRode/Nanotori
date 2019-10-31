@@ -1,1 +1,19 @@
 #tukaj naj bi šla funkcija za graf
+def grid(M,N):
+    i=0
+    j=0
+    u = []
+    v = []
+    while i <= M:
+        while j <= N:
+            u[i,j].x = 3*j
+            if j % 2 == 0:
+                u[i,j] = 2*i
+            else:
+                u[i,j] = 2*i + 1
+            v[i,j].x = u[i,j] + 2
+            v[i,j].y = u[i,j]
+            j += 1
+        i += 1
+
+grid(10,10)
