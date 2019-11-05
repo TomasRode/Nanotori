@@ -15,17 +15,22 @@
 
 \section{Navodila}
 
-Nanotor je 3-regularen graf na torusu. Vsak nanotor lahko dobimo tako, da na šeskotni mreži enačimo nasprotni stranici danega paralelograma. Torej je vsak nanotorus določen z dvema vektorjema v ravnini ${(k,l)$ in $(m, n)}$ za katere velja ter $k^2 + l^2 != 0$ in $m^2 + n^2 != 0$.
+Nanotor je 3-regularen graf na torusu. Vsak nanotor lahko dobimo tako, da na šeskotni mreži enačimo nasprotni stranici danega paralelograma. Torej je vsak nanotorus določen z dvema vektorjema v ravnini $(k,l)$ in $(m, n)$ za katere velja $k^2 + l^2 != 0$ in $m^2 + n^2 != 0$. Projekt je sestavljen iz štirih podnalog:
 
-\section{Opis dela}
+\begin{itemize}
+  \item V prvem delu naloge morava ustvariti funkcijo, ki v \textit{Sage} konstruira nanotor, za dane $k, l, m, n$.
+  \item V drugem delu morava s pomočjo funkcij v \textit{Sage} preučiti nekaj lastnosti nanotorov: za dane $k, l, m, n$ morava določiti število vozlišč, premer, tranzitivnost in druge lastnosti nanotora.
+  \item Tretji del naloge zahteva, da za $v \in V(T)$, poljubno vozlišče nanotora, določiva število vozlišč na razdaljah $i,\ 1 \leq i \leq text{diam}(T)$. Poiskati morava formulo za dane $i, k, l, m, n$.
+  \item Naj bo $T$ nanotorus tipa $(k, l, m, n)$. Ugotoviti morava ali obstaja nanotorus tipa $(k', 0, m', n')$, izomorfen T. Če obstaja, naloga zahteva, da ugotoviva odnos med $k, l, m, n$ in $k', m', n'$.
+\end{itemize}
 
-Za izvedbo naloge sva se odločila za programski jezik \textit{Python}, v katerega sva za lažje delo z grafi naložila knjižnice \texttt{networkx, numpy, matplotlib, random} in \texttt{time}.
-\textit{Tukaj sledi še KRATEK opis, kaj koda dela}.
+\section{Opravljeno delo (do 5. 11. 2019)}
+
+S pomočjo objektnega programiranja sva v \textit{Sage} zapisala funkcijo, ki konstruira nanotor s $k, l, m$ in $n$. Preverila sva, da funkcija deluje na nekaj grafih, v naslednjih dneh pa bova preizkusila še nekaj primerov.
 
 \section{Načrt za nadaljnje delo}
 
-Ko bova na podlagi dovolj velikega vzorca dreves videla, katera so za najina problema najbolj ugodna, bova s pomočjo genetskega algoritma postopoma izbirala le tista najugodnejša in jih na vsakem koraku križala ali modificirala. Ta postopek bova ponavljala, dokler bo postopek na posameznem koraku še vračal ugodnejša drevesa.
-
+Delo bova nadaljevala pri nasledjih točkah iz navodil, torej bova najprej ugotavljala lastnosti nanotorov. Iz teh ugotovitev bova potem preverjala, kakšne so razdalje v nanotoru in kdaj sta nanotora izomorfna.
 
 
 \end{document}
