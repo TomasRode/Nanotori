@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.5)  6 NOV 2019 22:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.5)  6 NOV 2019 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -284,11 +284,11 @@ Package pdftex.def Info: nano4.png  used on input line 53.
 Here is how much of TeX's memory you used:
  3649 strings out of 492167
  55350 string characters out of 6129159
- 128856 words of memory out of 5000000
+ 128858 words of memory out of 5000000
  7957 multiletter control sequences out of 15000+600000
  38603 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,6n,46p,372b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,6n,46p,376b,204s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2019/texm
 f-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2019/texmf-dist/fonts/enc/d
 vips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/
@@ -300,7 +300,7 @@ texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2019/texmf-dist/fonts/ty
 pe1/public/lm/lmr8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmri10
 .pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2
 019/texmf-dist/fonts/type1/public/lm/lmsy8.pfb>
-Output written on "kratko poročilo.pdf" (3 pages, 780648 bytes).
+Output written on "kratko poročilo.pdf" (3 pages, 781085 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  41 compressed objects within 1 object stream
