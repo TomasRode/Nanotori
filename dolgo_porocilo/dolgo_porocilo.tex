@@ -190,9 +190,23 @@ def nanotorus(k, l, m, n):
 
 \section{Časovna zahtevnost funkcije nanotorus}
 
+Časovna zahtevnost funkcije \texttt{nanotorus} je najbolj odvisna od velikosti mreže šestkotnikov, na kateri je treba preveriti vsebovanost točk v paralelogramu. Na sliki lahko vidimo koliko časa potrebuje funkcija za konstruiranje grafa v odvisnosti od enega parametra.
+\begin{center}
+\includegraphics[width=10cm]{zahtevnost1}
+\end{center}
+\vspace{1cm}
+
+Vidimo, da je časovna zahtevnost v tem primeru linearna, kar lahko pojanimo s tem, da se ob podaljševanju paralelograma v eno smer tudi mreža šestkotnikov poveča sorazmerno. Na naslednji sliki pa lahko vidimo, da v primeru podaljševanja paralelograma v dve različni smeri časovna zahtevnost funkcije raste kvadratično, saj se v tem primeru tudi mreža šestkotnikov povečuje v obe smeri.
+
+\begin{center}
+\includegraphics[width=10cm]{zahtevnost2}
+\end{center}
+\vspace{1cm}
+
+
 \section{Število točk do dane razdalje}
 
-Število točk na razdaljah, krajših od danega $d$, sva dobila s sledečo funkcijo. Ob pisanju poročila sva ugotovila, da bi jo bilo mogoče optimizirati, če bi dodala seznam pregledanih vozlišč.
+Število točk na razdaljah, krajših od danega $d$, sva dobila s sledečo funkcijo. Ob pisanju poročila sva ugotovila, da bi jo bilo mogoče optimizirati, če bi dodala množico že pregledanih vozlišč.
 
 \begin{verbatim}
 def vozlisca_na_razdalji_d(graf, start, dodane, d=0):
@@ -211,7 +225,7 @@ def vozlisca_na_razdalji_d(graf, start, dodane, d=0):
 
 \pagebreak
 
-To funkcijo sva preizkusila na zelo različnih grafih z namenom, da bi našla formulo za izražanje števila točk z $d, k, l, m$ in $n$. Pri enostavnih grafih sva našla nekatere formule, ampak niso držale za vse razdalje. Na večjih grafih pa preprosto nisva uspela dobiti povezavo, ki bi zajemala, kar se dogaja s številom točk pri spremembi parametrov. 
+To funkcijo sva preizkusila na zelo različnih grafih z namenom, da bi našla formulo za izražanje števila točk z $d, k, l, m$ in $n$. Pri enostavnih grafih sva našla nekatere formule, ampak niso držale za vse razdalje. Na večjih grafih pa preprosto nisva uspela dobiti povezave, ki bi zajemala, kar se dogaja s številom točk pri spremembi parametrov. 
 
 \begin{center}
 \includegraphics[width=10cm]{tocke}
