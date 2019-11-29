@@ -60,14 +60,14 @@ Tretji graf ima veliko vozlišč, kar ga dela zelo nepreglednega, omogoči pa, d
 
 \subsection{Opis delovanja funkcije nanotorus}
 
-Funkcijo nanotorus sva si zamislila tako, da deluje v naslednjih korakih:
+Konstrukcijo nanotorusov sva opravila v naslednjih korakih:
 
 \begin{enumerate}
-\item Definicija razreda točk tipa U in V
-\item Konstrukcija mreže šestkotnikov
-\item Določanje, katere točke so vsebovane v paralelogramu
-\item Konstrukcija povezav v nanotorusu
-\item Končna funkcija \texttt{nanotorus}
+\item Definicija razreda točk tipa U in V.
+\item Konstrukcija mreže šestkotnikov.
+\item Določanje, katere točke so vsebovane v paralelogramu.
+\item Konstrukcija povezav v nanotorusu.
+\item Končna funkcija \texttt{nanotorus}.
 \end{enumerate}
 
 \subsubsection{Definicija razreda točk tipa U in V}
@@ -90,7 +90,7 @@ class U:
         s = set({V(self.a, self.b), V(self.a, self.b - 1), 
         	V(self.a + 1, self.b - 1)})
         return s
-    
+
     def premakni(self, c, d):
         return U(self.a + c, self.b + d)
 
