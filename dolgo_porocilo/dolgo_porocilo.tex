@@ -233,7 +233,7 @@ To funkcijo sva preizkusila na zelo različnih grafih z namenom, da bi našla fo
 \section{Izomorfnost}
 
 Nanotora bosta izomorfna, če na šestkotni mreži enačimo nekatere točke tako, da se bodo povezave med točkami ohranile. V najinem primeru sva želela dobiti graf oblike \texttt{(0, l', m', n')}, ki je izomorfen \texttt{(k, l, m, n)}. Tu sva navodila nekoliko priredila, saj sva v najinem programu zamenjala vektorja $A1$ in $A2$. V svojem bistvu ostaja naloga enaka, saj želiva zapisati nanotor \texttt{(k, l, m, n)} tako, da uničiva navpično komponento prvega vektorja. 
-Ugotoviti sva morala, na kakšen način se začnejo poimenovanja točk na šestkotni mreži ponavljati zaradi enačenja nasprotnih stranic paralelograma. Želela sva dobiti vektor, ki v ''vodoravni'' smeri povezuje izhodišče mreže z naslednjo točko \texttt{U(0, 0)}. Ker se take točke nahajajo pri večkratnikih vektorjev \texttt{(k, l)} in \texttt{(m, n)}, ga lahko dobimo naslednjo enačbo: \texttt{a * (k, l) = b * (m, n) + (0, c)}. Velja: \texttt{a = m / d} in \texttt{b = k / d}, kjer je \texttt{d = gcd(m, k)}, pri čemer dovolimo, da se d razlikuje v preznaku in dodamo zato absolutno vrednost. Dobimo, da je \texttt{c = abs(a * l - b * n)}.
+Ugotoviti sva morala, na kakšen način se začnejo poimenovanja točk na šestkotni mreži ponavljati zaradi enačenja nasprotnih stranic paralelograma. Želela sva dobiti vektor, ki v ''vodoravni'' smeri povezuje izhodišče mreže z naslednjo točko \texttt{U(0, 0)}. Ker se take točke nahajajo pri večkratnikih vektorjev \texttt{(k, l)} in \texttt{(m, n)}, ga lahko dobimo naslednjo enačbo: \texttt{a * (k, l) = b * (m, n) + (0, c)}. Velja: \texttt{a = m / d} in \texttt{b = k / d}, kjer je \texttt{d = gcd(m, k)}, pri čemer dovolimo, da se d razlikuje v predznaku in dodamo zato absolutno vrednost. Dobimo, da je \texttt{c = abs(a * l - b * n)}.
 Za izomorfna grafa mora veljati tudi, da lahko v točko \texttt{(m', n')} pridemo z neko kombinacijo vektorjev \texttt{(k, l)} in \texttt{(m, n)}, saj bomo tudi to točko enačili z \texttt{U(0,0)}. Iz tega sledi, da je \texttt{(m', n') = x * (k, l) + y * (m, n)}. Torej je \texttt{m' = gcd(m, k) = d} in \texttt{n' = x * l + y * n }.
 
 Tako sva zapisala sledečo funkcijo, ki dani četverici \texttt{(k, l, m, n)} priredi \texttt{nanotorus(0, ll, mm, nn)}, izomorfen nanotorusu, ki ga dobimo s to četverico.
@@ -253,5 +253,9 @@ def izomorfni\_graf(k, l, m, n):
     
     return nanotorus(0, ll, mm, nn)
 \end{verbatim}
+
+\section{Pojasnilo}
+
+Zaradi napake pri konstruiranju nanotorov se funkciji za izomorfnost in število vozlišč na dani razdalji ne obnašata tako, kot bi se morala. To napako sva našla šele pred kratkim, saj sva mislila, da ta del deluje, kot mora. Upava, da nama bo uspelo to napako v naslednjih dneh odpraviti.
 
 \end{document}
