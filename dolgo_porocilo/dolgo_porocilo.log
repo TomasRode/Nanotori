@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.5)  29 NOV 2019 16:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.5)  29 NOV 2019 21:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -7,8 +7,8 @@ entering extended mode
 LaTeX2e <2019-10-01> patch level 1
 (c:/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
-(c:/texlive/2019/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+(c:/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -224,120 +224,122 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-5.
+6.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-5.
+6.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-15.
+16.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-15.
+16.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 15.
+(Font)              <12> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 15.
+(Font)              <8> on input line 16.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 15.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 19.
-<nano2.png, id=1, 617.30624pt x 368.577pt>
-File: nano2.png Graphic file (type png)
-<use nano2.png>
-Package pdftex.def Info: nano2.png  used on input line 33.
-(pdftex.def)             Requested size: 284.52756pt x 169.8849pt.
+(Font)              <6> on input line 16.
  [1
 
-{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<nano3.png, id=17, 613.69275pt x 328.8285pt>
-File: nano3.png Graphic file (type png)
-<use nano3.png>
-Package pdftex.def Info: nano3.png  used on input line 41.
-(pdftex.def)             Requested size: 284.52756pt x 152.45209pt.
-<nano1.png, id=18, 617.30624pt x 275.22826pt>
-File: nano1.png Graphic file (type png)
-<use nano1.png>
-Package pdftex.def Info: nano1.png  used on input line 49.
-(pdftex.def)             Requested size: 284.52756pt x 126.8585pt.
- [2 <./nano2.png> <./nano3.png>]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
-4.
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./dolgo_poroci
+lo.toc
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 4.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 4.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
+.
 
 (c:/texlive/2019/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \hbox (19.41641pt too wide) in paragraph at lines 82--82
-[]        \T1/lmtt/m/n/10.95 self.a = a # a konstanta ... koliko A1 vektorjev u
-porabimo[] 
+))
+\tf@toc=\write3
+\openout3 = `dolgo_porocilo.toc'.
+
+ [1] [2]
+<nano2.png, id=24, 617.30624pt x 368.577pt>
+File: nano2.png Graphic file (type png)
+<use nano2.png>
+Package pdftex.def Info: nano2.png  used on input line 39.
+(pdftex.def)             Requested size: 284.52756pt x 169.8849pt.
+<nano1.png, id=25, 755.2215pt x 362.5545pt>
+File: nano1.png Graphic file (type png)
+<use nano1.png>
+Package pdftex.def Info: nano1.png  used on input line 47.
+(pdftex.def)             Requested size: 284.52756pt x 136.58826pt.
+<nano3.png, id=26, 865.43324pt x 282.45525pt>
+File: nano3.png Graphic file (type png)
+<use nano3.png>
+Package pdftex.def Info: nano3.png  used on input line 55.
+(pdftex.def)             Requested size: 284.52756pt x 92.8614pt.
+ [3 <./nano2.png> <./nano1.png>]
+Overfull \hbox (1.499pt too wide) in paragraph at lines 108--108
+[]        \T1/lmtt/m/n/10 self.a = a # a konstanta ... koliko A1 vektorjev upor
+abimo[] 
  []
 
-[3 <./nano1.png>] [4]
-Overfull \hbox (7.91895pt too wide) in paragraph at lines 141--141
-[]         \T1/lmtt/m/n/10.95 Uji, Vji = v_paralelogramu(G, u_00, u_kl, u_klmn,
- u_mn)[] 
- []
-
-
-Overfull \hbox (7.91895pt too wide) in paragraph at lines 141--141
-[]         \T1/lmtt/m/n/10.95 Uji, Vji = v_paralelogramu(G, u_00, u_mn, u_klmn,
- u_kl)[] 
- []
-
-[5]
-LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 176.
-
-Overfull \hbox (13.66768pt too wide) in paragraph at lines 210--210
-[]            \T1/lmtt/m/n/10.95 vozlisca_na_razdalji_d(graf, povezava, dodane,
- d - 1)[] 
- []
-
-[6]
-<tocke.png, id=37, 717.27975pt x 401.70074pt>
+[4 <./nano3.png>] [5]
+LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `T1/lmtt/b/n' tried instead on input line 174.
+ [6]
+<zahtevnost1.png, id=41, 433.62pt x 289.08pt>
+File: zahtevnost1.png Graphic file (type png)
+<use zahtevnost1.png>
+Package pdftex.def Info: zahtevnost1.png  used on input line 193.
+(pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
+<zahtevnost2.png, id=43, 433.62pt x 289.08pt>
+File: zahtevnost2.png Graphic file (type png)
+<use zahtevnost2.png>
+Package pdftex.def Info: zahtevnost2.png  used on input line 200.
+(pdftex.def)             Requested size: 284.52756pt x 189.69504pt.
+ [7 <./zahtevnost1.png> <./zahtevnost2.png>]
+<tocke.png, id=49, 717.27975pt x 401.70074pt>
 File: tocke.png Graphic file (type png)
 <use tocke.png>
-Package pdftex.def Info: tocke.png  used on input line 217.
+Package pdftex.def Info: tocke.png  used on input line 228.
 (pdftex.def)             Requested size: 284.52756pt x 159.34735pt.
- [7 <./tocke.png>] (./dolgo_porocilo.aux) ) 
+ [8 <./tocke.png>] [9] (./dolgo_porocilo.aux) ) 
 Here is how much of TeX's memory you used:
- 3696 strings out of 492167
- 56051 string characters out of 6129159
- 132858 words of memory out of 5000000
- 7998 multiletter control sequences out of 15000+600000
- 45233 words of font info for 39 fonts, out of 8000000 for 9000
+ 3728 strings out of 492167
+ 56478 string characters out of 6129159
+ 133786 words of memory out of 5000000
+ 8021 multiletter control sequences out of 15000+600000
+ 52108 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,6n,46p,704b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2019/texmf-dist/fonts/en
-c/dvips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.e
-nc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2019/te
-xmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2019/texmf-dist/fonts/typ
-e1/public/lm/lmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmbx1
-2.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/
-2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2019/texmf-dist/fon
-ts/type1/public/lm/lmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/
-lmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texliv
-e/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2019/texmf-dist/
-fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
-/lm/lmsy8.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtk10.pfb><c:/
-texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on dolgo_porocilo.pdf (7 pages, 639341 bytes).
+ 53i,6n,46p,701b,245s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2019/texmf-dist/font
+s/enc/dvips/lm/lm-ec.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-math
+sy.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/201
+9/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2019/texmf-dist/fonts
+/type1/public/lm/lmbx10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/l
+mbx12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texl
+ive/2019/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2019/texmf-dist
+/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/lm/lmr17.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/te
+xlive/2019/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2019/texmf-d
+ist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2019/texmf-dist/fonts/type1/pu
+blic/lm/lmsy7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtk10.pfb>
+<c:/texlive/2019/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on dolgo_porocilo.pdf (10 pages, 684490 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 60 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 67 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
