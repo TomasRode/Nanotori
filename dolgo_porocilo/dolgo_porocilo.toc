@@ -1,0 +1,13 @@
+\babel@toc {slovene}{}
+\contentsline {section}{\numberline {1}Navodila}{2}% 
+\contentsline {section}{\numberline {2}Funkcija nanotorus}{3}% 
+\contentsline {subsection}{\numberline {2.1}Opis delovanja funkcije nanotorus}{4}% 
+\contentsline {subsubsection}{\numberline {2.1.1}Definicija razreda točk tipa U in V}{4}% 
+\contentsline {subsubsection}{\numberline {2.1.2}Konstrukcija mreže šestkotnikov}{5}% 
+\contentsline {subsubsection}{\numberline {2.1.3}Določanje, katere točke so vsebovane v paralelogramu}{5}% 
+\contentsline {subsubsection}{\numberline {2.1.4}Konstrukcija povezav v nanotorusu}{6}% 
+\contentsline {subsubsection}{\numberline {2.1.5}Končna funkcija \texttt {nanotorus}}{6}% 
+\contentsline {subsection}{\numberline {2.2}Časovna zahtevnost funkcije nanotorus}{7}% 
+\contentsline {section}{\numberline {3}Število točk do dane razdalje}{8}% 
+\contentsline {section}{\numberline {4}Izomorfnost}{9}% 
+\contentsline {section}{\numberline {5}Pojasnilo}{9}% 
