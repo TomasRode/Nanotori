@@ -1,4 +1,4 @@
-\documentclass[a4paper, 10 pt, titlepage]{article}
+\documentclass[a4paper, 11 pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[slovene]{babel}
@@ -12,11 +12,7 @@
 \author{Tomas Rode \\ Enej Kovač}
 
 \begin{document}
-
 \maketitle
-
-\tableofcontents
-\pagebreak
 
 \section{Navodila}
 
@@ -28,8 +24,6 @@ Nanotorus je 3-regularen graf na torusu. Vsak nanotorus lahko dobimo tako, da na
   \item Za $v \in V(T)$, poljubno vozlišče nanotorusa, določite število vozlišč na razdaljah $i:\ 1 \leq i \leq \textrm{diam}(T)$. Poizkusite poiskati formulo za dane $i, k, l, m, n$.
   \item Naj bo $T$ nanotorus tipa $(k, l, m, n)$. Ugotovite ali obstaja nanotorus tipa $(k', 0, m', n')$, izomorfen $T$. Če obstaja, ugotovite povezavo med $(k, l, m, n)$ in $(k', m', n')$.
 \end{enumerate}
-
-\pagebreak
 
 \section{Funkcija nanotorus}
 
@@ -44,7 +38,7 @@ Na prvi sliki sva dovolila, da \textit{Sage} prerazporedi točke po prosotru tak
 \vspace{1cm}
 
 \begin{center}
-\includegraphics[width=10cm]{nano1}
+\includegraphics[width=10cm]{nano3}
 \end{center}
 \vspace{1cm}
 
@@ -52,7 +46,7 @@ Pri drugem grafu sva ohranila koordinate vozlišč na šestkotni mreži. Izmed v
 \vspace{1cm}
 
 \begin{center}
-\includegraphics[width=10cm]{nano3}
+\includegraphics[width=10cm]{nano1}
 \end{center}
 \vspace{1cm}
 
@@ -60,14 +54,14 @@ Tretji graf ima veliko vozlišč, kar ga dela zelo nepreglednega, omogoči pa, d
 
 \subsection{Opis delovanja funkcije nanotorus}
 
-Konstrukcijo nanotorusov sva opravila v naslednjih korakih:
+Funkcijo nanotorus sva si zamislila tako, da deluje v naslednjih korakih:
 
 \begin{enumerate}
-\item Definicija razreda točk tipa U in V.
-\item Konstrukcija mreže šestkotnikov.
-\item Določanje, katere točke so vsebovane v paralelogramu.
-\item Konstrukcija povezav v nanotorusu.
-\item Končna funkcija \texttt{nanotorus}.
+\item Definicija razreda točk tipa U in V
+\item Konstrukcija mreže šestkotnikov
+\item Določanje, katere točke so vsebovane v paralelogramu
+\item Konstrukcija povezav v nanotorusu
+\item Končna funkcija \texttt{nanotorus}
 \end{enumerate}
 
 \subsubsection{Definicija razreda točk tipa U in V}
@@ -85,12 +79,16 @@ class U:
         x = vektor[0]
         y = vektor[1]
         return [x, y]
+\end{verbatim}
+        
+\pagebreak
 
+\begin{verbatim}
     def sosedi(self):
         s = set({V(self.a, self.b), V(self.a, self.b - 1), 
         	V(self.a + 1, self.b - 1)})
         return s
-
+    
     def premakni(self, c, d):
         return U(self.a + c, self.b + d)
 
@@ -124,7 +122,11 @@ def vozlisca_na_torusu(k, l, m, n):
      u_kl = U(k, l)
      u_klmn = U(k + m, l + n)
      u_mn = U(m, n)
+\end{verbatim}
+        
+\pagebreak
 
+\begin{verbatim}
      # ugotovimo orientacijo
      if zavoj(u_kl, u_mn, u_00) == 0:
          Uji, Vji = "Izrojen", "Izrojen" # niso mnozice
@@ -186,7 +188,7 @@ def nanotorus(k, l, m, n):
         return G
 \end{verbatim}
 
-\subsection{Časovna zahtevnost funkcije nanotorus}
+\section{Časovna zahtevnost funkcije nanotorus}
 
 Časovna zahtevnost funkcije \texttt{nanotorus} je najbolj odvisna od velikosti mreže šestkotnikov, na kateri je treba preveriti vsebovanost točk v paralelogramu. Na sliki lahko vidimo koliko časa potrebuje funkcija za konstruiranje grafa v odvisnosti od enega parametra.
 \begin{center}
@@ -201,7 +203,6 @@ Vidimo, da je časovna zahtevnost v tem primeru linearna, kar lahko pojanimo s t
 \end{center}
 \vspace{1cm}
 
-\pagebreak
 
 \section{Število točk do dane razdalje}
 
@@ -222,40 +223,15 @@ def vozlisca_na_razdalji_d(graf, start, dodane, d=0):
     return dodane
 \end{verbatim}
 
+\pagebreak
+
 To funkcijo sva preizkusila na zelo različnih grafih z namenom, da bi našla formulo za izražanje števila točk z $d, k, l, m$ in $n$. Pri enostavnih grafih sva našla nekatere formule, ampak niso držale za vse razdalje. Na večjih grafih pa preprosto nisva uspela dobiti povezave, ki bi zajemala, kar se dogaja s številom točk pri spremembi parametrov. 
 
 \begin{center}
 \includegraphics[width=10cm]{tocke}
 \end{center}
-
-\pagebreak
+\vspace{1cm}
 
 \section{Izomorfnost}
-
-Nanotora bosta izomorfna, če na šestkotni mreži enačimo nekatere točke tako, da se bodo povezave med točkami ohranile. V najinem primeru sva želela dobiti graf oblike \texttt{(0, l', m', n')}, ki je izomorfen \texttt{(k, l, m, n)}. Tu sva navodila nekoliko priredila, saj sva v najinem programu zamenjala vektorja $A1$ in $A2$. V svojem bistvu ostaja naloga enaka, saj želiva zapisati nanotor \texttt{(k, l, m, n)} tako, da uničiva navpično komponento prvega vektorja. 
-Ugotoviti sva morala, na kakšen način se začnejo poimenovanja točk na šestkotni mreži ponavljati zaradi enačenja nasprotnih stranic paralelograma. Želela sva dobiti vektor, ki v ''vodoravni'' smeri povezuje izhodišče mreže z naslednjo točko \texttt{U(0, 0)}. Ker se take točke nahajajo pri večkratnikih vektorjev \texttt{(k, l)} in \texttt{(m, n)}, ga lahko dobimo naslednjo enačbo: \texttt{a * (k, l) = b * (m, n) + (0, c)}. Velja: \texttt{a = m / d} in \texttt{b = k / d}, kjer je \texttt{d = gcd(m, k)}, pri čemer dovolimo, da se d razlikuje v predznaku in dodamo zato absolutno vrednost. Dobimo, da je \texttt{c = abs(a * l - b * n)}.
-Za izomorfna grafa mora veljati tudi, da lahko v točko \texttt{(m', n')} pridemo z neko kombinacijo vektorjev \texttt{(k, l)} in \texttt{(m, n)}, saj bomo tudi to točko enačili z \texttt{U(0,0)}. Iz tega sledi, da je \texttt{(m', n') = x * (k, l) + y * (m, n)}. Torej je \texttt{m' = gcd(m, k) = d} in \texttt{n' = x * l + y * n }.
-
-Tako sva zapisala sledečo funkcijo, ki dani četverici \texttt{(k, l, m, n)} priredi \texttt{nanotorus(0, ll, mm, nn)}, izomorfen nanotorusu, ki ga dobimo s to četverico.
-
-\begin{verbatim}
-def izomorfni\_graf(k, l, m, n):
-    d, x, y = xgcd(m, k)
-    d = abs(d)
-    a = m / d
-    b = k / d
-    c = abs(a * l - b * n) # = (m * l - k * n) / d
-    
-    
-    ll = c
-    mm = d
-    nn = x * l + y * n 
-    
-    return nanotorus(0, ll, mm, nn)
-\end{verbatim}
-
-\section{Pojasnilo}
-
-Zaradi napake pri konstruiranju nanotorov se funkciji za izomorfnost in število vozlišč na dani razdalji ne obnašata tako, kot bi se morala. To napako sva našla šele pred kratkim, saj sva mislila, da ta del deluje, kot mora. Upava, da nama bo uspelo to napako v naslednjih dneh odpraviti.
 
 \end{document}
